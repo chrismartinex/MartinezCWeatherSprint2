@@ -1,0 +1,25 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #95D2FF;
+}
+
+.mainTitleFormat{
+    font-family: ;
+    color: #4744CF;
+    background-color: #F1F5DE;
+}
+
+.DayNT{
+    font-family: ;
+    color: white;
+    font-size: 40px;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, auto)
+}
