@@ -16,88 +16,125 @@
 
 
 
-        <!-- page title-->
-        <section id="MainTitle">
-            <div class="row ">
-                <div class="col-12 text-center mainTitleFormat">
-                    <h1>5 DAY FORECAST</h1>
-                </div>
+        <!-- Page Title -->
+    <section id="MainTitle">
+        <div class="row mt-2">
+            <div class="col-12 text-center mainTitleFormat">
+                <h1>5 DAY FORECAST!</h1>
             </div>
-        </section>
-
-        <!-- date and time-->
-        <section id="DayNT">
-            <div class="row DayNT">
-                <div class="col-8 text-center">
-                    <p>TUESDAY, JAN 24</p>
-                </div>
-                <!-- time goes here-->
-                <div class="col-4 text-start">
-                    <p>11:12 AM</p>
-                </div>
-            </div>
-
-        </section>
-
-        <!-- Zip and favorites-->
-
-        <section id="ZNF">
-            <div class="row">
-                <div class="col">
-                <input type="text" class="form-control" placeholder="Enter Zip Code">
-                </div>
-                <div class="col">
-                    <button type="button" class="btn btn-secondary">Enter ZipCode</button>
-                </div>
-                <div class="col" 3></div>
-                <div class="col">4</div>
-            </div>
-        </section>
-
-        <!--week days-->
-
-        <section id="FDAYS">
-            <div class="row">
-
-      <div class="row mt-5">
-        <div class="grid-container text-center">
-          <div class="grid-item grid-item-1">
-            <p>MONDAY</p>
-          </div>
-          <div class="grid-item grid-item-2">
-            <p>TUESDAY</p>
-          </div>
-          <div class="grid-item grid-item-3">
-            <p>WEDNDESDAY</p>
-          </div>
-          <div class="grid-item grid-item-4">
-            <p>THURSDAY</p>
-          </div>
-          <div class="grid-item grid-item-5">
-            <p>FRIDAY</p>
-          </div>
         </div>
+    </section>
+    <!-- Date and Time -->
+    <section id="DNT">
+        <!-- Current date goes here -->
+        <div class="row dntTF">
+            <div class="col-12 text-center">
+                <p id="dategoeshere">TUESDAY, JAN 24</p>
+            </div>
+        </div>
+    </section>
+    <!-- ZIP and Favorites -->
+    <section id="ZNF">
+        <div class="row">
+            <div class="col text-center">
+                <input id="cityInput" type="text" class="inputValue" placeholder="">
+            </div>
+            <div class="col">
+                <button type="button" id="zipButton" class="btn btn-secondary">ENTER ZIP</button>
+            </div>
+            <div class="col">FAVORITES</div>
+            <div class="col">4</div>
+        </div>
+    </section>
+    <!-- Week Days -->
+    <section id="FDAYS">
+        <div class="row mt-5">
+            <div class="col">
+                <div class="grid-container text-center">
+                    <div class="grid-item grid-item-1">
+                      <h1 class="text-white">Monday</h1>
+                      <div class="d-flex justify-content-center">
+                        <div class="card" style="width: 18rem;">
+                        <img src="..." class="card-img-top" alt="card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Current Temp</h5>
+                          <p id="temp" class="card-text">Temp</p>
+                           <p id="max" class="card-text">Max</p>
+                           <p id="min" class="card-text">Min</p>
+
+
+                        </div>
+                      </div>
+                    </div>
+                      </div>
+                      
+                    <div class="grid-item grid-item-2">
+                      <h1 class="text-white">TUESDAY</h1>
+                      <div class="d-flex justify-content-center">
+                        <div class="card" style="width: 18rem;">
+                        <img src="..." class="card-img-top" alt="card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+                    <div class="grid-item grid-item-3">
+                      <h1 class="text-white">WEDNESDAY</h1>
+                      <div class="d-flex justify-content-center">
+                        <div class="card" style="width: 18rem;">
+                        <img src="..." class="card-img-top" alt="card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+                    <div class="grid-item grid-item-4">
+                      <h1 class="text-white">THURSDAY</h1>
+                      <div class="d-flex justify-content-center">
+                        <div class="card" style="width: 18rem;">
+                        <img src="..." class="card-img-top" alt="card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+                    <div class="grid-item grid-item-5">
+                      <h1 class="text-white" >FRIDAY</h1>
+                      <div class="d-flex justify-content-center">
+                        <div class="card" style="width: 18rem;">
+                        <img src="..." class="card-img-top" alt="card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+    <!-- City Name -->
+    <div class="row">
+      <div class="col text-center">
+        <h1>CITY NAME GOES HERE</h1>
       </div>
     </div>
-
-        </section>
-
-
-
-
-
-
+    <!-- DAY EVE NIGHT -->
+    <div class="row bg-light">
+      <div class="col-4 text-center">1</div>
+      <div class="col-4 text-center">2</div>
+      <div class="col-4 text-center">3</div>
     </div>
-
-
-
-
 
 
     <!--Last Div-->
     </div>
-
-
 
 
 
@@ -110,3 +147,10 @@
 </body>
 
 </html>
+
+
+
+<!--populate the data, some kind of storage, save the data to call it when needed
+we know that were to pull up on his side, and sj and create the rest of the functionallity
+search through the locations, give me data, and have it save. next level and make it all work self diagno-->
+
