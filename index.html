@@ -28,22 +28,24 @@
     <section id="DNT">
         <!-- Current date goes here -->
         <div class="row dntTF">
-            <div class="col-12 text-center">
+            <div class="col-12 text-center date">
                 <p id="dategoeshere">TUESDAY, JAN 24</p>
             </div>
         </div>
     </section>
-    <!-- ZIP and Favorites -->
+    <!-- ZIP-->
+    <!--did not get to favorites-->
     <section id="ZNF">
         <div class="row">
             <div class="col text-center">
-                <input id="cityInput" type="text" class="inputValue" placeholder="">
+                <input id="cityInput" type="text" class="inputValue borderinput text-center justify-content-center" placeholder="City or #ZIP">
+                <button id="zipButton" type="button" class="btn btn-success borderbtn justify-content-center">ENTER ZIP</button>
             </div>
             <div class="col">
-                <button type="button" id="zipButton" class="btn btn-secondary">ENTER ZIP</button>
+                <!-- <button id="zipButton" type="button" class="btn btn-secondary borderbtn">ENTER ZIP</button> -->
             </div>
-            <div class="col">FAVORITES</div>
-            <div class="col">4</div>
+            <!-- <div class="col">FAVORITES</div> -->
+            <!-- <div class="col">4</div> -->
         </div>
     </section>
     <!-- Week Days -->
@@ -52,12 +54,12 @@
             <div class="col">
                 <div class="grid-container text-center">
                     <div class="grid-item grid-item-1">
-                      <h1 class="text-white">Monday</h1>
+                      <h1 class="text-black-50">MONDAY</h1>
 
                       <div class="d-flex justify-content-center">
                         <div class="card" style="width: 18rem;">
                         <img  class="card-img-top bordercard rounded" src="http://openweathermap.org/img/wn/01d@2x.png" alt="card image cap" height="50%">
-                        <div class="card-body bordercard rounded">
+                        <div class="card-body bordercard1 rounded">
                           <h5 class="card-title">Current Temp</h5>
                           <p id="temp" class="card-text">Temp</p>
                            <p id="max" class="card-text">Max</p>
@@ -70,13 +72,13 @@
                       </div>
                       
                     <div class="grid-item grid-item-2">
-                      <h1 class="text-white">TUESDAY</h1>
+                      <h1 class="text-black-50">TUESDAY</h1>
 
                       <div class="d-flex justify-content-center">
                         <div class="card" style="width: 18rem;">
                         <img class="card-img-top bordercard rounded" src="http://openweathermap.org/img/wn/01d@2x.png"  alt="card image cap" height="50%">
-                        <div class="card-body bordercard rounded">
-                          <h5 class="card-title">Current Temp</h5>
+                        <div class="card-body bordercard1 rounded">
+                          <h5 class="card-title">CURRENT TEMP</h5>
                           <p id="temp2" class="card-text">Temp</p>
                            <p id="max2" class="card-text">Max</p>
                            <p id="min2" class="card-text">Min</p>
@@ -86,13 +88,13 @@
                     </div>
                     </div>
                     <div class="grid-item grid-item-3">
-                      <h1 class="text-white">WEDNESDAY</h1>
+                      <h1 class="text-black-50">WEDNESDAY</h1>
 
                       <div class="d-flex justify-content-center">
                         <div class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="http://openweathermap.org/img/wn/01d@2x.png"  alt="card image cap" height="50%">
-                        <div class="card-body">
-                          <h5 class="card-title">Current Temp</h5>
+                        <img class="card-img-top bordercard rounded" src="http://openweathermap.org/img/wn/01d@2x.png"  alt="card image cap" height="50%">
+                        <div class="card-body bordercard1 rounded">
+                          <h5 class="card-title">CURRENT TEMP</h5>
                           <p id="temp3" class="card-text">Temp</p>
                            <p id="max3" class="card-text">Max</p>
                            <p id="min3" class="card-text">Min</p>
@@ -101,12 +103,12 @@
                     </div>
                     </div>
                     <div class="grid-item grid-item-4">
-                      <h1 class="text-white">THURSDAY</h1>
+                      <h1 class="text-black-50">THURSDAY</h1>
                       <div class="d-flex justify-content-center">
                         <div class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="http://openweathermap.org/img/wn/01d@2x.png"  alt="card image cap" height="50%">
-                        <div class="card-body">
-                         <h5 class="card-title">Current Temp</h5>
+                        <img class="card-img-top  bordercard rounded" src="http://openweathermap.org/img/wn/01d@2x.png"  alt="card image cap" height="50%">
+                        <div class="card-body bordercard1 rounded">
+                         <h5 class="card-title">CURRENT TEMP</h5>
                           <p id="temp4" class="card-text">Temp</p>
                            <p id="max4" class="card-text">Max</p>
                            <p id="min4" class="card-text">Min</p>
@@ -115,12 +117,12 @@
                     </div>
                     </div>
                     <div class="grid-item grid-item-5">
-                      <h1 class="text-white" >FRIDAY</h1>
+                      <h1 class="text-black-50" >FRIDAY</h1>
                       <div class="d-flex justify-content-center">
                         <div class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="http://openweathermap.org/img/wn/01d@2x.png" alt="card image cap" height="50%">
-                        <div class="card-body">
-                         <h5 class="card-title">Current Temp</h5>
+                        <img class="card-img-top bordercard rounded" src="http://openweathermap.org/img/wn/02d@2x.png" alt="card image cap" height="50%">
+                        <div class="card-body bordercard1 rounded">
+                         <h5 class="card-title">CURRENT TEMP</h5>
                           <p id="temp5" class="card-text">Temp</p>
                            <p id="max5" class="card-text">Max</p>
                            <p id="min5" class="card-text">Min</p>
@@ -131,28 +133,23 @@
             </div>
         </div>
     </section>
-    <!-- City Name -->
-    <div class="row">
-      <div class="col text-center">
-        <h1 id="currentcity">CITY NAME GOES HERE</h1>
+    <!-- my Cities-->
+    <div class="row mt-5">
+      <div class="col text-center d-flex justify-content-center">
+        <h1 id="currentcity" class="citybox">CITY goes here</h1>
       </div>
     </div>
     <!-- DAY EVE NIGHT -->
-    <div class="row bg-light">
-      <div class="col-4 text-center">1</div>
-      <div class="col-4 text-center">2</div>
-      <div class="col-4 text-center">3</div>
+    <div class="row mt-3 d-flex justify-content-evenly">
+      <div class="col-6 text-center"></div>
+      <div class="col-6 text-center"></div>
+      <!-- <div class="col-4 text-center"></div> -->
     </div>
 
 
-    <!--Last Div-->
+    <!--Last of it-->
     </div>
-
-
-
-
-
-    <script src="./scripts/app.js" type="module"></script>
+  <script src="./scripts/app.js" type="module"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>

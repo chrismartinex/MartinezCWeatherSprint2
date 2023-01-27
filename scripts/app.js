@@ -10,6 +10,8 @@ if(prod.isLive == true)
 }
 
 
+
+
 ///import on top
 
 
@@ -175,30 +177,30 @@ async function AsyncGetData4(city){
     weatherApi5 = data
     console.log(weatherApi5)
     //monday
-    temp.innerText = weatherApi5.list[8].main.feels_like;
-    max.innerText = weatherApi5.list[8].main.temp_max;
-    min.innerText = weatherApi5.list[8].main.temp_min;
+    temp.innerText = "Temperature " + weatherApi5.list[8].main.feels_like + " " + "°F"
+    max.innerText = "Max Temp " + weatherApi5.list[8].main.temp_max + " " + "°F"
+    min.innerText = "Min Temp " +  weatherApi5.list[8].main.temp_min + " " + "°F"
 
 
     //tuesday 
-    temp2.innerText = weatherApi5.list[16].main.feels_like;
-    max2.innerText = weatherApi5.list[16].main.temp_max;
-    min2.innerText = weatherApi5.list[16].main.temp_min;
+    temp2.innerText =  "Temperature " + weatherApi5.list[16].main.feels_like + " " + "°F"
+    max2.innerText = "Max Temp " + weatherApi5.list[16].main.temp_max + " " + "°F"
+    min2.innerText = "Min Temp " + weatherApi5.list[16].main.temp_min  + " " + "°F"
     console.log();
 
     
     //wednesday
-    temp3.innerText = weatherApi5.list[24].main.feels_like;
-    max3.innerText = weatherApi5.list[24].main.temp_max;
-    min3.innerText = weatherApi5.list[24].main.temp_min;
+    temp3.innerText = "Temperature " + weatherApi5.list[24].main.feels_like + " " + "°F"
+    max3.innerText =  "Max Temp " + weatherApi5.list[24].main.temp_max + " " + "°F"
+    min3.innerText = "Min Temp " +  weatherApi5.list[24].main.temp_min + " " + "°F"
     //thursday
-    temp4.innerText = weatherApi5.list[36].main.feels_like;
-    max4.innerText = weatherApi5.list[36].main.temp_max;
-    min4.innerText = weatherApi5.list[36].main.temp_min;
+    temp4.innerText = "Temperature " + weatherApi5.list[36].main.feels_like + " " + "°F"
+    max4.innerText = "Max Temp " + weatherApi5.list[36].main.temp_max + " " + "°F"
+    min4.innerText = "Min Temp " + weatherApi5.list[36].main.temp_min + " " + "°F"
     //friday
-    temp5.innerText = weatherApi5.list[0].main.feels_like;
-    max5.innerText = weatherApi5.list[0].main.temp_max;
-    min5.innerText = weatherApi5.list[0].main.temp_min;
+    temp5.innerText = "Temperature " + weatherApi5.list[0].main.feels_like + " " + "°F"
+    max5.innerText = "Max Temp " + weatherApi5.list[0].main.temp_max + " " + "°F"
+    min5.innerText = "Min Temp " +  weatherApi5.list[0].main.temp_min + " " + "°F"
 
     
 //getting the city type inn
