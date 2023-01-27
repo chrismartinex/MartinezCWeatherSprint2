@@ -1,4 +1,19 @@
-let API_KEY = 'dd39ad3836cd95e0847faf228f7f4b17';
+import { prod, dev } from "./enviroment.js";
+
+let apiKey = '&appid=';
+
+if(prod.isLive == true)
+{
+    apiKey += prod.apiKey;
+}else{
+    apiKey += dev.apiKey;
+}
+
+
+///import on top
+
+
+// let API_KEY = 'dd39ad3836cd95e0847faf228f7f4b17';
 let weatherApi1;
 let forecastApi;
 let timeDayApi;
@@ -15,6 +30,8 @@ let latitude;
 let longitude;
 let initiallocation;
 let mainTemp;
+let mainTempMax;
+
 let mainTempMin;
 let currentcityname;
 let citynamebtn;
@@ -100,7 +117,7 @@ currentcity.innerText = currentcity
   ///geoLocation
   //current WEATHER
 async function AsyncGetData2(latitude, longitude){
-const promise = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=dd39ad3836cd95e0847faf228f7f4b17&units=imperial`)
+const promise = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=imperial${apiKey}`)
 const data = await promise.json();
 weatherApi3 = data
 // console.log(weatherApi3.name)
@@ -114,7 +131,7 @@ weatherApi3 = data
 
 ///LATITUDE AND LONGGITUDE
 async function AsyncGetData3(latitude, longitude){
-    const promise = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=dd39ad3836cd95e0847faf228f7f4b17&units=imperial`)
+    const promise = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=imperial${apiKey}`)
     const data = await promise.json();
     weatherApi3 = data
     // console.log(weatherApi3.name)
@@ -129,7 +146,7 @@ async function AsyncGetData3(latitude, longitude){
 //current city TODAYS WEATHER
 
 async function AsyncGetData(city){
-    const promise = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=dd39ad3836cd95e0847faf228f7f4b17&units=imperial`)
+    const promise = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial${apiKey}`)
     const data = await promise.json();
     weatherApi = data
     console.log(weatherApi.main)
@@ -138,7 +155,7 @@ async function AsyncGetData(city){
     let lon = weatherApi.coord.lon;
     mainTemp = weatherApi.main.temp_max;
     mainTempMin = weatherApi.main.temp_min;
-    mainTempMax = weatherApi.main
+    mainTempMax = weatherApi.main;
     // temp.innerText = weatherApi.main.feels_like
     // max.innerText = mainTemp
     // min.innerText = mainTempMin
@@ -153,7 +170,7 @@ async function AsyncGetData(city){
 ///WEATHER FORECAST
 
 async function AsyncGetData4(city){
-    const promise = await fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=dd39ad3836cd95e0847faf228f7f4b17&units=imperial`)
+    const promise = await fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=imperial${apiKey}`)
     const data = await promise.json();
     weatherApi5 = data
     console.log(weatherApi5)
@@ -212,7 +229,7 @@ console.log(citynamebtn);
 
 
 async function AsyncGetData1(city){
-    const promise = await fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=dd39ad3836cd95e0847faf228f7f4b17&units=imperial`)
+    const promise = await fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=imperial${apiKey}`)
     const data = await promise.json();
     forecastApi = data
     //console.log(forecastApi)
