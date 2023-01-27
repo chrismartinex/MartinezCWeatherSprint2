@@ -15,7 +15,6 @@ if(prod.isLive == true)
 ///import on top
 
 
-// let API_KEY = 'dd39ad3836cd95e0847faf228f7f4b17';
 let weatherApi1;
 let forecastApi;
 let timeDayApi;
@@ -262,10 +261,7 @@ function getWeatherData(){
 
 
 //notes below
-//let Key dd39ad3836cd95e0847faf228f7f4b17
-//api.openweathermap.org/data/2.5/forecast?lat=37.9977728&lon=-121.8248704&appid=8e02b0db85b4a729b31b20a4e496b448&units=imperial
 //fetches
-// const KEY = "dd39ad3836cd95e0847faf228f7f4b17";
 // fetch('').then(res => res.json()).then(data => {
         //     fetch ()
 
